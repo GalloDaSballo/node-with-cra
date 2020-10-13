@@ -7,20 +7,12 @@ const path = require('path')
 console.log("in server PORT", port)
 console.log("in server process.env.NODE_ENV", process.env.NODE_ENV)
 
-app.get('/', (req, res) => {
-  console.log("In get request")
-    res.json([
-        {id: 1, title: "Because why not"}
-    ])
-})
-
 app.get('/api', (req, res) => {
   console.log("In API ")
     res.json([
         {id: 1, title: "From API"}
     ])
 })
-
 
 if(process.env.NODE_ENV === "production"){
     // Serve the static files from the React app
