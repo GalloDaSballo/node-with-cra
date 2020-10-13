@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 1234
 
+const path = require('path')
+
 console.log("in server PORT", port)
 console.log("in server process.env.NODE_ENV", process.env.NODE_ENV)
 
